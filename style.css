@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/soil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: not-allowed;
+    font-family: 'Permanent Marker', cursive;
+}
+.wrapper{
+    cursor: url(images/hammer.png), default;
+    width: 1099.5px;
+    /* height: 825px; */
+    height: 100vh;
+    background-image: url(images/ground.jpg);
+    background-size: cover;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 15%;
+    font-size: 3rem;
+    color: #ea4335;
+}
+.header img{
+    width: 10%;
+}
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35%;
+    font-size: 7rem;
+    color: #ea4335;
+    letter-spacing: 1.5rem;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 50%;
+}
+.mole-container{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.mole{
+    width: 153px;
+    height: 147px;
+}
+.end{
+    background-image: url(images/end.jpg);
+    background-size: cover;
+    width: 1200px;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    border-radius: 5px;
+    font-size: 7rem;
+    color: #4285f4;
+    letter-spacing: 1.5rem;
+}
+button{
+    background-color: #0074d9;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dispn{
+    display: none;
+}
+@media (max-width: 1200px){
+    .wrapper{
+        background-image: url(images/grass.jpg);
+    }
+    .header{
+        height: 10%;
+    }
+    .score-board{
+        height: 15%;
+    }
+    .container{
+        height: 75%;
+    }
+    .mole-container{
+        width: 50%;
+    }
+    .score-board, .end{
+        font-size: 3rem;
+    }
+}
