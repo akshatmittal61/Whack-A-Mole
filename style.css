@@ -95,23 +95,33 @@ button{
 .dispn{
     display: none;
 }
-@media (max-width: 1200px){
+@media (max-width: 640px){
     .wrapper{
+        height: 100vh;
         background-image: url(images/grass.jpg);
+        background-size: cover;
     }
     .header{
-        height: 10%;
+        height: 7.5%;
     }
     .score-board{
-        height: 15%;
+        height: 12.5%;
+        letter-spacing: 1.25rem;
     }
     .container{
-        height: 75%;
+        height: 80%;
     }
     .mole-container{
         width: 50%;
     }
-    .score-board, .end{
-        font-size: 3rem;
+    .mole{
+        width: 114.75px;
+        height: 110.25px;
+    }
+    .score-board, .end, .header{
+        font-size: 2.5rem;
+    }
+    .end{
+    letter-spacing: 1.25rem;
     }
 }

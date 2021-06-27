@@ -19,6 +19,7 @@ setInterval(() => {
     }
     if ((sec == 0) && (min > 0)) {
         seconds.innerHTML = 59;
+        sec=59;
         minutes.innerHTML = --min;
     }
 }, 1000);
@@ -113,9 +114,9 @@ function nextFrame() {
             if (moles[i].next <= now) {
                 getNextStatus(moles[i]);
             }
-    if ((sec === 0) && (min === 0)) {
-        end();
-    }
+            if ((sec == 0) && (min == 0)) {
+                end();
+            }
         }
         runAgainAt = now + 1000;
     }
